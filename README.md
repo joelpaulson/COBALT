@@ -1,2 +1,3 @@
-# COBALT
-Constrained Bayesian Optimization of Computationally Expensive Grey-Box (Hybrid First-Principles and Data-Driven) Models
+# COBALT: COnstrained Bayesian optimizAtion of computationaLly expensive grey-box models exploiting derivaTive information
+
+Need.
