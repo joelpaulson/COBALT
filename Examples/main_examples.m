@@ -213,7 +213,7 @@ log_list = Regret_list;
 for j = 1:length(optimizer_list)
     log_list{j} = log10(Regret_list{j});
     h = stairs(1:Nmax, mean(log_list{j}(:,1:Nmax)), color_list{j}, 'linewidth', 4, 'DisplayName', optimizer_list{j});
-    errorbar(1:Nmax, mean(log_list{j}(:,1:Nmax)), 1.96*std(log_list{j}(:,1:Nmax))/sqrt(Nmc), color_list{j}, 'CapSize', 10, 'linewidth', 1, 'linestyle', 'none')
+    errorbar(1:Nmax, mean(log_list{j}(:,1:Nmax)), log10(1.96*std(Regret_list{j}(:,1:Nmax))/sqrt(Nmc)), color_list{j}, 'CapSize', 10, 'linewidth', 1, 'linestyle', 'none')
     h_list = [h_list ; h];
 end
 leg = legend(h_list);
