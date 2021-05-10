@@ -2,7 +2,7 @@
 
 This code was used to generate the results of a recently submitted paper titled "COBALT: COnstrained Bayesian optimizAtion of computationaLly expensive grey-box models exploiting derivaTive information". The paper is under review in Computers and Chemical Engineering and will be uploaded to arxiv shortly. If you use this code in your research, please cite this paper.
 
-![COBALT_illustration](/Images/cobalt_figure.pdf)
+![COBALT_illustration](/Images/cobalt_figure_png.png)
 
 ## Getting Started
 
