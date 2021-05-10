@@ -2,6 +2,8 @@
 
 This code was used to generate the results of a recently submitted paper titled "COBALT: COnstrained Bayesian optimizAtion of computationaLly expensive grey-box models exploiting derivaTive information". The paper is under review in Computers and Chemical Engineering and will be uploaded to arxiv shortly. If you use this code in your research, please cite this paper.
 
+![COBALT_illustration](/Images/cobalt_figure.pdf)
+
 ## Getting Started
 
 To use COBALT, download all files contained in the repository and run the algorithm on the provided test problems under the 'Example' folder. To use the algorithm on your own functions, simply copy the same format as that shown in the 'main_examples.m' script. The algorithm can be applied to any number of decision variables and any number of black-box simulators as long as they are callable by a Matlab function. The objective function f and constraint functions g should be differentiable and implemented within the CasADi framework to exploit derivative information. 
