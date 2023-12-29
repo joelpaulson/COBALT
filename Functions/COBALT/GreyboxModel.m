@@ -823,7 +823,7 @@ classdef GreyboxModel < matlab.mixin.Copyable
        %%% to call potentially internal Matlab solvers (like ga)
        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
        function [c, ceq] = my_nonlincon(obj, x, gmean_func, gvar_func, taug, ng)
-           ceval = full(gmean_func(x') + taug*gvar_func(x'));
+           ceval = full(gmean_func(x') + taug*sqrt(gvar_func(x')));
            c = ceval';
            ceq = [];
        end
